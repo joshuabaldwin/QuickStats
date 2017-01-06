@@ -63,7 +63,9 @@ OR...
 Technical Notes:
 ============================
 - Both the mergesort implementation and the bubble sort implementation will re-order the input array. The array is passed by reference.
-- The bubble sort implementation runs in O(n2) time, which is a slower worst-case runtime than the O(nlogn) worst-case runtime of the mergesort implementation.  Usage of mergesort is recommended, while bubblesort is provided for backward compatibility. The functions that require sorting (median and mode) use the mergesort implementation.
+- The bubble sort implementation runs in O(n2) time, which is a slower worst-case runtime than the O(nlogn) worst-case runtime of the mergesort implementation.
+  Therefore, usage of mergesort is recommended, while bubblesort is provided for backward compatibility.
+- The functions that require sorting (median and mode) have been modified to utilize the new mergesort implementation.
 - The library only currently works on float arrays. Future releases could create functions to work on arrays of other data types.
 
 
