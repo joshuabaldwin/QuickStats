@@ -199,7 +199,7 @@ float QuickStats::mode(float samples[], int m, float epsilon) //calculate the mo
 // Merges two subarrays of arr[].
 // First subarray is arr[left...middle]
 // Second subarray is arr[middle+1..right]
-void merge(float arr[], int left, int middle, int right)
+void QuickStats::merge(float arr[], int left, int middle, int right)
 {
   int i, j, k;
   int n1 = middle - left + 1;
@@ -257,7 +257,7 @@ void merge(float arr[], int left, int middle, int right)
 // Mergesort implementation to sort arrays in O(nlogn) time
 // "left" is for the left index of the sub-array of arr to be sorted
 // "right" is for the right index of the sub-array of arr to be sorted
-void mergeSort(float arr[], int left, int right)
+void QuickStats::mergeSort(float arr[], int left, int right)
 {
   if (left < right)
   {
